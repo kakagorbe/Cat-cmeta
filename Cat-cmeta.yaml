@@ -100,7 +100,7 @@ proxies:
       h4: 0
       h3: 0
 
-  - name: "🇻🇳 Vietnam - WG"
+  - name: "🇻🇳 Vietnam"
     type: wireguard
     ip: "100.80.234.177/32"
     ipv6: ""
