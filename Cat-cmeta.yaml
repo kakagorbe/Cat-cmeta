@@ -12,8 +12,7 @@ geo-update-interval: 168
 external-controller: '127.0.0.1:9090'
 secret: 'Hpp@19921992'
 external-ui: ui
-# external-ui-url: '[https://github.com/haishanh/yacd/archive/gh-pages.zip](https://github.com/haishanh/yacd/archive/gh-pages.zip)'
-external-ui-url: '[https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip](https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip)'
+external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
   allow-private-network: true
@@ -29,9 +28,9 @@ dns:
   use-hosts: true
   use-system-hosts: false
   nameserver:
-    - '[https://1.1.1.1/dns-query](https://1.1.1.1/dns-query)'
-    - '[https://8.8.8.8/dns-query](https://8.8.8.8/dns-query)'
-    - '[https://dns.quad9.net/dns-query](https://dns.quad9.net/dns-query)'
+    - 'https://1.1.1.1/dns-query'
+    - 'https://8.8.8.8/dns-query'
+    - 'https://dns.quad9.net/dns-query'
   proxy-server-nameserver:
     - '178.22.122.100' # شکن
     - '185.51.200.2'   # شکن
@@ -56,8 +55,8 @@ tun:
   strict-route: true
   auto-detect-interface: true
   dns-hijack:
-  - 'tcp://any:53'
-  - 'udp://any:53'
+    - 'tcp://any:53'
+    - 'udp://any:53'
   mtu: 1330
 sniffer:
   enable: true
@@ -333,7 +332,7 @@ proxy-groups:
 
   - name: "اتصال🦦خودکار"
     type: url-test
-    url: "[http://www.google.com/generate_204](http://www.google.com/generate_204)"
+    url: "http://www.google.com/generate_204"
     interval: 30
     tolerance: 100
     proxies:
@@ -352,56 +351,56 @@ rule-providers:
     type: http
     format: text
     behavior: domain
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt"
     path: "./ruleset/malware.txt"
     interval: 86400
   malware-cidr:
     type: http
     format: text
     behavior: ipcidr
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt"
     path: "./ruleset/malware-cidr.txt"
     interval: 86400
   phishing:
     type: http
     format: text
     behavior: domain
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt"
     path: "./ruleset/phishing.txt"
     interval: 86400
   phishing-cidr:
     type: http
     format: text
     behavior: ipcidr
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt"
     path: "./ruleset/phishing-cidr.txt"
     interval: 86400
   cryptominers:
     type: http
     format: text
     behavior: domain
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt"
     path: "./ruleset/cryptominers.txt"
     interval: 86400
   category-ads-all:
     type: http
     format: text
     behavior: domain
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/category-ads-all.txt"
     path: "./ruleset/category-ads-all.txt"
     interval: 86400
   ir:
     type: http
     format: text
     behavior: domain
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ir.txt"
     path: "./ruleset/ir.txt"
     interval: 86400
   ir-cidr:
     type: http
     format: text
     behavior: ipcidr
-    url: "[https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt](https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt)"
+    url: "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ircidr.txt"
     path: "./ruleset/ir-cidr.txt"
     interval: 86400
 
