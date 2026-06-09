@@ -72,263 +72,31 @@ sniffer:
       ports: [443, 8443]
       
 proxies:
-  - name: "🇳🇱 Netherlands"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "qJvTGS3hC2YMHAlQssT4tecMqyZD8U5EEbzzqPTQrWQ="
-    server: "212.92.104.193"
-    port: 51820
-    public-key: "+veOJwVuUpP9QAx4q3krdh4pTBgOyqew1TTTDnyITRg="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: ""
+  - name: "🇳🇱 NL-Amsterdam-Vless"
+    type: vless
+    server: 46.229.243.70
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    network: tcp
+    tls: true
     udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
+    servername: cdn7-09.vk-cdnvideo.com
 
-  - name: "🇻🇳 Vietnam"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: ""
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "103.9.79.220"
-    port: 80
-    public-key: "SxBT11IISNRou7thGo5A1QtaMjfzPIzZXDxdYEbDxhE="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0"]
-    reserved: ""
+  - name: "🇬🇧 UK-London-SS"
+    type: ss
+    server: series-a1.samanehha.co
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "W74XFALLLuw6m5IA"
     udp: true
-    mtu: 1280
-    dns: ["10.255.255.2"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h4: 4
-      h3: 3
-
-  - name: "🇺🇸 United States"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "iGe5wHd9CBC6q3cdt56toCyDjJLs6wuwn3wymiLyWlA="
-    server: "95.173.221.129"
-    port: 51820
-    public-key: "dOF5ay40T5bp9rWkfUxeAwTa5Fd5ANdstiSjjdwwLRU="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
-
-  - name: "🇺🇸 United States 2"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "+MhW0MqPqZUS5uoLUHd8KD/Gpm3knByud2ld6BFP8G0="
-    server: "95.173.221.92"
-    port: 51820
-    public-key: "jYGCeCwc2fkhmaXOBJEHPwXHRdPbAhizTiG4zK5ycBc="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
-
-  - name: "🇺🇸 United States 3"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "mKu6dNUTPDGEbNYz7y8Swkh8tGN7P7+szZzQHaf5gG0="
-    server: "95.173.221.33"
-    port: 51820
-    public-key: "YSj10LI8/Im58sgiA7n6Szw96GgE0p3TZv3MfbkxZH0="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
-
-  - name: "🇺🇸 United States 4"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "AJSEVqK5ALHT/23ZJgGyUmoNl9oiZTgvEhXcBUqan2Q="
-    server: "154.47.22.77"
-    port: 51820
-    public-key: "YHSRY7kE+yE/rMDmeStrdoMVNbSnk0swQVP4KxiB0hg="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0", "::/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
-
-  - name: "🇬🇧 United Kingdom"
-    type: wireguard
-    ip: "100.80.234.177/32"
-    ipv6: ""
-    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
-    server: "193.36.118.228"
-    port: 80
-    public-key: "bGn6yuCFQWWF8+ZMGlJ0M6+IJRlkLXn0/UI/mvIyYwQ="
-    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
-    allowed-ips: ["0.0.0.0/0"]
-    reserved: ""
-    udp: true
-    mtu: 1280
-    dns: ["10.255.255.2"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 4
-      jmin: 40
-      jmax: 70
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 2
-      h4: 4
-      h3: 3
-
-  - name: "🇸🇪 Sweden"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "OHD2v02OBdfe6UPruLgzdG4M52xZHK2bOeQJyuIacWs="
-    server: "62.93.166.121"
-    port: 51820
-    public-key: "xDQLfB3I7BbEUAImiYKQlPEMoZBBYJCpNroycYyy7C0="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
-
-  - name: "🇸🇬 Singapore"
-    type: wireguard
-    ip: "10.2.0.2/32"
-    ipv6: ""
-    private-key: "4JDjcPSRqRUTzeCmaaZvLzSX02IEtFfNgoU6OXCvn10="
-    server: "149.50.211.166"
-    port: 51820
-    public-key: "MsgCxkI8hLSpeEh9ttQjx7FT9Hu/R3WEUyF0YomZlCE="
-    pre-shared-key: ""
-    allowed-ips: ["0.0.0.0/0"]
-    reserved: ""
-    udp: true
-    mtu: 1420
-    dns: ["10.2.0.1"]
-    persistent-keepalive: 0
-    dialer-proxy: ""
-    amnezia-wg-option:
-      jc: 1
-      jmin: 1
-      jmax: 1
-      s1: 0
-      s2: 0
-      h1: 1
-      h2: 0
-      h4: 0
-      h3: 0
 
 proxy-groups:
   - name: "🛖خانه"
     type: select
     proxies: 
       - "اتصال🦦خودکار"
-      - "🇳🇱 Netherlands"
-      - "🇻🇳 Vietnam"
-      - "🇺🇸 United States"
-      - "🇺🇸 United States 2"
-      - "🇺🇸 United States 3"
-      - "🇺🇸 United States 4"
-      - "🇬🇧 United Kingdom"
-      - "🇸🇪 Sweden"
-      - "🇸🇬 Singapore"
+      - "🇳🇱 NL-Amsterdam-Vless"
+      - "🇬🇧 UK-London-SS"
 
   - name: "اتصال🦦خودکار"
     type: url-test
@@ -336,15 +104,8 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - "🇳🇱 Netherlands"
-      - "🇻🇳 Vietnam"
-      - "🇺🇸 United States"
-      - "🇺🇸 United States 2"
-      - "🇺🇸 United States 3"
-      - "🇺🇸 United States 4"
-      - "🇬🇧 United Kingdom"
-      - "🇸🇪 Sweden"
-      - "🇸🇬 Singapore"
+      - "🇳🇱 NL-Amsterdam-Vless"
+      - "🇬🇧 UK-London-SS"
       
 rule-providers:
   malware:
