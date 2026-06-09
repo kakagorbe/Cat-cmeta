@@ -73,58 +73,77 @@ sniffer:
       ports: [443, 8443]
       
 proxies:
-  - name: "hy2-hamedp71🏴‍☠️"
-    type: hysteria2
-    server: kevin.vpny.online
-    port: 22002
-    password: "@KevinZakarian"
-    obfs: salamander
-    obfs-password: "KevinZakarian"
-    skip-cert-verify: true
-
-  - name: "hamedvpns🇩🇪"
-    type: vless
-    server: 91.107.191.12
-    port: 29376
-    uuid: 03bc875d-0d8e-49b6-9094-89a8159e65ee
-    network: tcp
-    tls: false
+  - name: "🇳🇱 Netherlands"
+    type: wireguard
+    ip: "10.2.0.2/32"
+    ipv6: ""
+    private-key: "qJvTGS3hC2YMHAlQssT4tecMqyZD8U5EEbzzqPTQrWQ="
+    server: "212.92.104.193"
+    port: 51820
+    public-key: "+veOJwVuUpP9QAx4q3krdh4pTBgOyqew1TTTDnyITRg="
+    pre-shared-key: ""
+    allowed-ips: ["0.0.0.0/0", "::/0"]
+    reserved: ""
     udp: true
+    mtu: 1420
+    dns: ["10.2.0.1"]
+    persistent-keepalive: 0
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 1
+      jmin: 1
+      jmax: 1
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 0
+      h4: 0
+      h3: 0
 
-  - name: "🇩🇪hamedvpns"
-    type: vless
-    server: 152.233.35.228
-    port: 8443
-    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-    network: tcp
-    tls: true
-    servername: de1.fromblancwithlove.com
-    skip-cert-verify: true
+  - name: "🇻🇳 Vietnam - WG"
+    type: wireguard
+    ip: "100.80.234.177/32"
+    ipv6: ""
+    private-key: "cIq+3tcHVT7gRMl4kIv0WE68ERiTmDtA7rhyHhLJ/mg="
+    server: "103.9.79.220"
+    port: 80
+    public-key: "SxBT11IISNRou7thGo5A1QtaMjfzPIzZXDxdYEbDxhE="
+    pre-shared-key: "N/gfMZSjvP8mbXfVP2hnD5CX8BkGvOyheJ67mCpD+QQ="
+    allowed-ips: ["0.0.0.0/0"]
+    reserved: ""
     udp: true
-
-#warp
-#Arista
-#Rayan
-#BPB
-#Game
+    mtu: 1280
+    dns: ["10.255.255.2"]
+    persistent-keepalive: 0
+    dialer-proxy: ""
+    amnezia-wg-option:
+      jc: 4
+      jmin: 40
+      jmax: 70
+      s1: 0
+      s2: 0
+      h1: 1
+      h2: 2
+      h4: 4
+      h3: 3
 
 proxy-groups:
-  - name: "💚خانه"
+  - name: "🛖خانه"
     type: select
     proxies: 
-      - "اتصال❤️خودکار"
-      - "hamedvpns🇩🇪"
-      - "🇩🇪hamedvpns"
+      - "اتصال🦦خودکار"
+      - "🇳🇱 Netherlands"
+      - "🇻🇳 Vietnam"
 
-  - name: "اتصال❤️خودکار"
+  - name: "اتصال🦦خودکار"
     type: url-test
     url: "http://www.google.com/generate_204"
     interval: 30
     tolerance: 100
     proxies:
-      - "hamedvpns🇩🇪"
-      - "🇩🇪hamedvpns"
-
+      - "🇳🇱 Netherlands"
+      - "🇻🇳 Vietnam"
+      
 rule-providers:
   malware:
     type: http
@@ -193,7 +212,7 @@ rules:
   - GEOIP,IR,DIRECT
   - RULE-SET,ir,DIRECT
   - RULE-SET,ir-cidr,DIRECT
-  - MATCH,💚خانه
+  - MATCH,🛖خانه
 
 ntp:
   enable: true
