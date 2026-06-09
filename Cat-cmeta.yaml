@@ -72,339 +72,193 @@ sniffer:
       ports: [443, 8443]
       
 proxies:
-  - name: "🇨🇦 CA-Toronto-Vless-WS"
+  - name: "🇬🇧 UK-London-Vless-1"
     type: vless
-    server: 172.66.46.214
-    port: 2053
-    uuid: 8545c44f-b1b4-4295-ae98-f0b6301a537f
-    network: ws
-    tls: true
-    udp: true
-    servername: ios-azadnet.pages.dev
-    ws-opts:
-      path: "/telegram-proxy_mtm?ed=2048"
-      headers:
-        Host: ios-azadnet.pages.dev
-
-  - name: "🇸🇨 SC-Victoria-Vless-XHTTP"
-    type: vless
-    server: 45.130.125.193
+    server: 152.233.28.196
     port: 8443
-    uuid: 5960576d-829e-4d09-8232-0e80121a6fe4
-    network: xhttp
-    tls: true
-    udp: true
-    servername: ssj.new-persian-song.ir
-    client-fingerprint: chrome
-    xhttp-opts:
-      path: "/?ed"
-
-  - name: "🇨🇦 CA-Toronto-Vless-Argo"
-    type: vless
-    server: 188.114.97.6
-    port: 8443
-    uuid: 9ec1469c-1b8b-4109-b8e9-020800af8ec9
-    network: ws
-    tls: true
-    udp: true
-    servername: argoovpn.imanaghapour.ir
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/"
-      headers:
-        Host: argoovpn.imanaghapour.ir
-
-  - name: "🇨🇦 CA-Toronto-Vless-Teasalo"
-    type: vless
-    server: 162.159.153.67
-    port: 443
-    uuid: 1d399c5a-1c32-4fff-a4d0-d78fd3328a4c
-    network: ws
-    tls: true
-    udp: true
-    servername: pages.teasalo.cloudns.org
-    ws-opts:
-      path: "/Telegram%40V2ray_Alpha/%3Fed%3D2560"
-      headers:
-        Host: pages.teasalo.cloudns.org
-
-  - name: "🇩🇪 DE-Frankfurt-Trojan"
-    type: trojan
-    server: gm1.bw8848.org
-    port: 443
-    password: "RaxTmLsUysCCyFnHeEbw87Z93F4rGEhxmCEzvTLAssP9zuMA"
-    network: ws
-    tls: true
-    udp: true
-    sni: gm1.bw8848.org
-    ws-opts:
-      path: "/gm1-gm1-j6meub"
-      headers:
-        Host: gm1.bw8848.org
-
-  - name: "🇩🇪 DE-Nuremberg-Vless-Reality"
-    type: vless
-    server: 5.75.196.174
-    port: 20141
-    uuid: 1e661ebe-666f-45dc-aab7-d1accab310f3
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     network: tcp
     tls: true
     udp: true
-    flow: xtls-rprx-vision
-    servername: arvancloud.ir
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: qr9I7Hv2oZ2F0BiWgy9DmYHp0vcFEXcNRVHkyFg3OUw
-      short-id: 5e11ecc7d4
+    servername: uk1.fromblancwithlove.com
+    skip-cert-verify: true
+
+  - name: "🇬🇧 UK-London-Vless-2"
+    type: vless
+    server: 152.233.28.198
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: uk1.fromblancwithlove.com
+    skip-cert-verify: true
+
+  - name: "🇮🇱 IL-TelAviv-Vless"
+    type: vless
+    server: 169.150.235.74
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: tlv-il.fromblancwithlove.com
+
+  - name: "🇨🇦 CA-Toronto-Vless"
+    type: vless
+    server: 185.156.47.96
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: yyz-ca-01.fromblancwithlove.com
+
+  - name: "🇯🇵 JP-Tokyo-Vless"
+    type: vless
+    server: 178.249.213.177
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: jp1.fromblancwithlove.com
+    skip-cert-verify: true
+
+  - name: "🇩🇪 DE-Frankfurt-Vless"
+    type: vless
+    server: 152.233.35.228
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: de1.fromblancwithlove.com
+    skip-cert-verify: true
+
+  - name: "🇧🇪 BE-Brussels-Vless-1"
+    type: vless
+    server: 207.211.214.42
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: bru-be-01.fromblancwithlove.com
 
   - name: "🇳🇱 NL-Amsterdam-Vless"
     type: vless
-    server: 77.74.123.168
+    server: 195.181.173.199
     port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     network: tcp
     tls: true
     udp: true
-    servername: cdn7-09.vk-cdnvideo.com
-
-  - name: "🇸🇨 SC-Victoria-Trojan"
-    type: trojan
-    server: 45.130.125.76
-    port: 443
-    password: "humanity"
-    network: ws
-    tls: true
-    udp: true
-    sni: www.calmloud.com
+    servername: ams1.fromblancwithlove.com
     skip-cert-verify: true
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: www.calmloud.com
 
-  - name: "🇨🇦 CA-Toronto-Trojan"
-    type: trojan
-    server: 104.17.121.71
-    port: 443
-    password: "humanity"
-    network: ws
-    tls: true
-    udp: true
-    sni: www.creationlong.org
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: www.creationlong.org
-
-  - name: "🇨🇦 CA-Montreal-Vless"
+  - name: "🇵🇱 PL-Warsaw-Vless"
     type: vless
-    server: speedtest.net
-    port: 443
-    uuid: c6355c77-0a0b-4e88-a4fe-441ed0c2b59d
-    network: ws
-    tls: true
-    udp: true
-    client-fingerprint: firefox
-    ws-opts:
-      path: "/Telegram:@UnlimitedDev-Telegram:@UnlimitedDev-Telegram:@UnlimitedDev?ed=8880"
-      headers:
-        Host: TEL.UNLIMITEDDEV.http.www..fast.com.unlimiteddev.ir.
-
-  - name: "🇩🇪 DE-Falkenstein-Vless-Reality"
-    type: vless
-    server: 178.105.103.153
-    port: 443
-    uuid: 1b9e301d-cecd-4eb1-8b36-eef811c2696d
-    network: tcp
-    tls: true
-    udp: true
-    servername: max.ru
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zxzgWvYs4pMN3fEduth1soI1yMZDkynb1bBM4tj85EE
-      short-id: 5e841fab
-
-  - name: "🇵🇰 PK-Karachi-Trojan"
-    type: trojan
-    server: 149.104.104.101
-    port: 443
-    password: "BzOx2R8u59SOipHwhIYW-IMyJePBEiUY-m"
-    network: tcp
-    tls: true
-    udp: true
-    sni: www.registry-monitor.click
-
-  - name: "🇬🇧 UK-Fareham-Vless"
-    type: vless
-    server: 217.179.221.234
-    port: 24986
-    uuid: 40e32120-08c8-4a48-aa0b-156b653f364f
-    network: httpupgrade
-    tls: false
-    udp: true
-    httpupgrade-opts:
-      path: "/"
-      headers:
-        Host: mci.ir
-
-  - name: "🇮🇹 IT-Milan-Vless-Reality"
-    type: vless
-    server: 31.76.113.34
-    port: 443
-    uuid: dfc0cb9d-f005-41b0-848c-7703bd39d0de
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    servername: it.s3-cloud.xyz
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
-      short-id: 7a3f9e2b1c8d4f6a
-
-  - name: "🇨🇦 CA-Montreal-Vless-Global"
-    type: vless
-    server: global.connectingissues.ir
-    port: 80
-    uuid: edbd7b0b-225c-4595-a18c-6eeb5b5fb791
-    network: xhttp
-    tls: false
-    udp: true
-    xhttp-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: shirin-kose.de
-
-  - name: "🇨🇦 CA-Montreal-Vless-MCI"
-    type: vless
-    server: mci.connectingissues.ir
-    port: 80
-    uuid: edbd7b0b-225c-4595-a18c-6eeb5b5fb791
-    network: xhttp
-    tls: false
-    udp: true
-    xhttp-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: shirin-kose.de
-
-  - name: "🇳🇱 NL-Amsterdam-SS"
-    type: ss
-    server: 108.181.58.239
-    port: 8388
-    cipher: chacha20-ietf-poly1305
-    password: "CJmTCCNx7Ltud"
-    udp: true
-
-  - name: "🇨🇦 CA-Montreal-Vless-Local"
-    type: vless
-    server: local.connectingissues.ir
-    port: 80
-    uuid: edbd7b0b-225c-4595-a18c-6eeb5b5fb791
-    network: xhttp
-    tls: false
-    udp: true
-    xhttp-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: shirin-kose.de
-
-  - name: "🇺🇸 US-SantaClara-Vless"
-    type: vless
-    server: 64.23.143.23
-    port: 34045
-    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-    network: tcp
-    tls: true
-    udp: true
-    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-      short-id: e8ab71d0
-
-  - name: "🇳🇱 NL-Amsterdam-Vless-Reality"
-    type: vless
-    server: 178.62.229.130
-    port: 443
-    uuid: a7e04b44-855e-4fe7-8fa0-31894e928bce
-    network: tcp
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    servername: ea.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: RYsjWbL0kjpi144PPllR_2C_KK3a071iGBPUUCsHH1A
-      short-id: a4844ba7
-
-  - name: "🇺🇸 US-Dallas-Vless"
-    type: vless
-    server: 167.82.0.1
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    network: ws
-    tls: false
-    udp: true
-    ws-opts:
-      path: "/"
-      headers:
-        Host: max-gb1.global.ssl.fastly.net
-
-  - name: "🇨🇦 CA-Toronto-Vless-WS2"
-    type: vless
-    server: 104.19.64.105
+    server: 84.17.55.241
     port: 8443
-    uuid: adeefaa4-3734-4a6d-8e45-3f6c33c8e98c
-    network: ws
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
     tls: true
     udp: true
-    servername: interim.adaspoloandco.com
-    client-fingerprint: chrome
-    ws-opts:
-      path: "/RoBeRt"
-      headers:
-        Host: interim.adaspoloandco.com
+    servername: pl1.fromblancwithlove.com
 
-  - name: "🇩🇪 DE-Falkenstein-Vless"
+  - name: "🇧🇪 BE-Brussels-Vless-2"
     type: vless
-    server: 91.107.191.12
-    port: 29376
-    uuid: 03bc875d-0d8e-49b6-9094-89a8159e65ee
+    server: 79.127.224.12
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     network: tcp
-    tls: false
+    tls: true
     udp: true
+    servername: bru-be-01.fromblancwithlove.com
+
+  - name: "🇬🇧 UK-London-Vless-Domain"
+    type: vless
+    server: uk1.fromblancwithlove.com
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    skip-cert-verify: true
+
+  - name: "🇪🇸 ES-Madrid-Vless"
+    type: vless
+    server: 212.102.48.217
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: mad-es.fromblancwithlove.com
+
+  - name: "🇷🇴 RO-Bucharest-Vless"
+    type: vless
+    server: 95.173.199.80
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: buh-ro-01.fromblancwithlove.com
+
+  - name: "🇫🇷 FR-Paris-Vless-1"
+    type: vless
+    server: 79.127.196.11
+    port: 8443
+    uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+    network: tcp
+    tls: true
+    udp: true
+    servername: cdg-1.fromblancwithlove.com
+    skip-cert-verify: true
+
+  - name: "🇫🇷 FR-Paris-Vless-Domain"
+    type: vless
+    server: cdg-1.fromblancwithlove.com
+    port: 8443
+    uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+    network: tcp
+    tls: true
+    udp: true
+
+  - name: "🇭🇰 HK-HongKong-Vless"
+    type: vless
+    server: 84.17.37.19
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    network: tcp
+    tls: true
+    udp: true
+    servername: hkg1.fromblancwithlove.com
+    skip-cert-verify: true
 
 proxy-groups:
   - name: "🛖خانه"
     type: select
     proxies: 
       - "اتصال🦦خودکار"
-      - "🇨🇦 CA-Toronto-Vless-WS"
-      - "🇸🇨 SC-Victoria-Vless-XHTTP"
-      - "🇨🇦 CA-Toronto-Vless-Argo"
-      - "🇨🇦 CA-Toronto-Vless-Teasalo"
-      - "🇩🇪 DE-Frankfurt-Trojan"
-      - "🇩🇪 DE-Nuremberg-Vless-Reality"
+      - "🇬🇧 UK-London-Vless-1"
+      - "🇬🇧 UK-London-Vless-2"
+      - "🇮🇱 IL-TelAviv-Vless"
+      - "🇨🇦 CA-Toronto-Vless"
+      - "🇯🇵 JP-Tokyo-Vless"
+      - "🇩🇪 DE-Frankfurt-Vless"
+      - "🇧🇪 BE-Brussels-Vless-1"
       - "🇳🇱 NL-Amsterdam-Vless"
-      - "🇸🇨 SC-Victoria-Trojan"
-      - "🇨🇦 CA-Toronto-Trojan"
-      - "🇨🇦 CA-Montreal-Vless"
-      - "🇩🇪 DE-Falkenstein-Vless-Reality"
-      - "🇵🇰 PK-Karachi-Trojan"
-      - "🇬🇧 UK-Fareham-Vless"
-      - "🇮🇹 IT-Milan-Vless-Reality"
-      - "🇨🇦 CA-Montreal-Vless-Global"
-      - "🇨🇦 CA-Montreal-Vless-MCI"
-      - "🇳🇱 NL-Amsterdam-SS"
-      - "🇨🇦 CA-Montreal-Vless-Local"
-      - "🇺🇸 US-SantaClara-Vless"
-      - "🇳🇱 NL-Amsterdam-Vless-Reality"
-      - "🇺🇸 US-Dallas-Vless"
-      - "🇨🇦 CA-Toronto-Vless-WS2"
-      - "🇩🇪 DE-Falkenstein-Vless"
+      - "🇵🇱 PL-Warsaw-Vless"
+      - "🇧🇪 BE-Brussels-Vless-2"
+      - "🇬🇧 UK-London-Vless-Domain"
+      - "🇪🇸 ES-Madrid-Vless"
+      - "🇷🇴 RO-Bucharest-Vless"
+      - "🇫🇷 FR-Paris-Vless-1"
+      - "🇫🇷 FR-Paris-Vless-Domain"
+      - "🇭🇰 HK-HongKong-Vless"
 
   - name: "اتصال🦦خودکار"
     type: url-test
@@ -412,29 +266,22 @@ proxy-groups:
     interval: 30
     tolerance: 100
     proxies:
-      - "🇨🇦 CA-Toronto-Vless-WS"
-      - "🇸🇨 SC-Victoria-Vless-XHTTP"
-      - "🇨🇦 CA-Toronto-Vless-Argo"
-      - "🇨🇦 CA-Toronto-Vless-Teasalo"
-      - "🇩🇪 DE-Frankfurt-Trojan"
-      - "🇩🇪 DE-Nuremberg-Vless-Reality"
+      - "🇬🇧 UK-London-Vless-1"
+      - "🇬🇧 UK-London-Vless-2"
+      - "🇮🇱 IL-TelAviv-Vless"
+      - "🇨🇦 CA-Toronto-Vless"
+      - "🇯🇵 JP-Tokyo-Vless"
+      - "🇩🇪 DE-Frankfurt-Vless"
+      - "🇧🇪 BE-Brussels-Vless-1"
       - "🇳🇱 NL-Amsterdam-Vless"
-      - "🇸🇨 SC-Victoria-Trojan"
-      - "🇨🇦 CA-Toronto-Trojan"
-      - "🇨🇦 CA-Montreal-Vless"
-      - "🇩🇪 DE-Falkenstein-Vless-Reality"
-      - "🇵🇰 PK-Karachi-Trojan"
-      - "🇬🇧 UK-Fareham-Vless"
-      - "🇮🇹 IT-Milan-Vless-Reality"
-      - "🇨🇦 CA-Montreal-Vless-Global"
-      - "🇨🇦 CA-Montreal-Vless-MCI"
-      - "🇳🇱 NL-Amsterdam-SS"
-      - "🇨🇦 CA-Montreal-Vless-Local"
-      - "🇺🇸 US-SantaClara-Vless"
-      - "🇳🇱 NL-Amsterdam-Vless-Reality"
-      - "🇺🇸 US-Dallas-Vless"
-      - "🇨🇦 CA-Toronto-Vless-WS2"
-      - "🇩🇪 DE-Falkenstein-Vless"
+      - "🇵🇱 PL-Warsaw-Vless"
+      - "🇧🇪 BE-Brussels-Vless-2"
+      - "🇬🇧 UK-London-Vless-Domain"
+      - "🇪🇸 ES-Madrid-Vless"
+      - "🇷🇴 RO-Bucharest-Vless"
+      - "🇫🇷 FR-Paris-Vless-1"
+      - "🇫🇷 FR-Paris-Vless-Domain"
+      - "🇭🇰 HK-HongKong-Vless"
       
 rule-providers:
   malware:
